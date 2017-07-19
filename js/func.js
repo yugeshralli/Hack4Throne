@@ -26,3 +26,22 @@ function randomNums(){
 }
 function a(){
 alert("SUBMISSION SUCCESFULL");}
+function rec(){
+
+
+var select = document.getElementById("limit");
+select.onchange=function(){
+    if(select.value=="2"){
+       document.getElementById("mem2name").style.display="inline";
+	    document.getElementById("mem3name").style.display="none";
+    }
+	
+	else if(select.value=="3"){
+		  document.getElementById("mem2name").style.display="inline";
+       document.getElementById("mem3name").style.display="inline";
+    }else{
+       document.getElementById("mem2name").style.display="none";
+	     document.getElementById("mem3name").style.display="none";
+    }
+}
+}
