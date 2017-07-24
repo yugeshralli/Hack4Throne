@@ -25,7 +25,7 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
     </head>
-    <body id="body" data-spy="scroll" data-target=".header" onLoad="randomNums();rec();" onsubmit="a();" style="background-color:#fafafa">
+    <body id="body" data-spy="scroll" data-target=".header" onLoad="randomNums();rec();" onsubmit="a();" style="background-color:#f6f6f6" class="page-on-scroll">
    <header class="header navbar-fixed-top">
             <nav class="navbar" role="navigation">
                 <div class="container">
@@ -41,14 +41,17 @@
                         </div>
                     </div>
                   <div class="collapse navbar-collapse nav-collapse">
+                  		<div class="menu-container">
                             <ul class="nav navbar-nav navbar-nav-right">
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#event">Event</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#timeline">Event Timeline</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#rules">Rules</a></li>
                            		<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#register">Registration</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
                             </ul> 
+                         </div>
                     </div>
                 </div>
             </nav>
@@ -67,7 +70,7 @@
                                      <p style=" color:#34404e;text-align:justify"><strong>‘HACK 4 THRONE’</strong>     is  a  locale, whose  intellectual stimulation is  triggered  and  transformed  into  an  innovative  outcome. It  is set  to be a notable  digital  product  development  Hackathon ever held.It   provides a  venue   for self expression  and  creativity   through  technology. <strong>'HACK 4 THRONE'</strong> is organised by <strong>Information Technology department of Rajalakshmi Engineering College.</strong></p>
                         <p style="color:#34404e;text-align:justify">Galvanizing  the   thoughts  and  implementing  an  idea  with  the  technology  would  be  the  objective of the Hackathon.‘HACK 4 THRONE’  is    open  for   anyone   who  works   persistently   with   unique  thought  process. The event will extendd for about <strong>36  Hours</strong> at a stretch.</p>
                         <div class="col-lg-6">
-                        <h4 style="color:#34404e">Tracks</h4>
+                        <h4 style="color:#ffffff" class="well text-center">Tracks</h4>
                        			  <ul>
                        	 			<li>IOT (INTERNET OF THINGS)</li>
                          			<li>BIG DATA</li>
@@ -77,7 +80,7 @@
                          			</ul>
                         </div>
                         <div class="col-lg-6">
-                        <h4 style="color:#34404e">Themes</h4>
+                        <h4 style="color:#ffffff" class="well text-center">Themes</h4>
                                     <ul>
                                     <li>HEALTH CARE</li>
                                     <li>AGRICULTURE</li>
@@ -97,6 +100,15 @@
                		</div>
                 </div>
           </div>
+          
+          <div id="timeline">
+            <div class="container">
+                  <div class="col-sm-4 sm-margin-b-50 col-lg-12">
+                  	<h3 style="text-align:center;color:#ffffff" class="well">Event Timeline</h3>
+                  </div>
+            </div>
+          </div>
+          
           <div id="about" class="bg-color-sky-light">
            <div class="container">
 <div class="col-sm-4 sm-margin-b-50 col-lg-12">
@@ -114,6 +126,23 @@
 </div>
        </div>
         </div>
+        <!-- Logos -->
+     <div class="container">
+     <div class="col-sm-4 sm-margin-b-50 col-lg-12 text-center fixed-ratio-resize">
+     <h3 class="text-center well"  style=" color:#ffffff">Sponsors</h3>
+     <img src="img/sponsors/csi.png" class="img-rounded isize"></img>&nbsp;&nbsp;
+     <img src="img/sponsors/acm.png" class="img-rounded isize"></img>&nbsp;&nbsp;
+     <img src="img/sponsors/ieee.png" class="img-rounded isize"></img>&nbsp;&nbsp;
+     <img src="img/sponsors/ictact.png" class="img-rounded isize"></img>&nbsp;&nbsp;
+     <img src="img/sponsors/spi.png" class="img-rounded isize"></img>&nbsp;&nbsp;
+     <img src="img/sponsors/tcs.png" class="img-rounded isize"></img>&nbsp;&nbsp;
+     <img src="img/sponsors/cts.png" class="img-rounded isize"></img>
+     </div>
+     </div>
+     <div class="col-lg-offset-1 col-lg-10 text-center">
+     &nbsp;
+     </div>
+     <!-- End of logos -->
         <div id="rules" class="bg-color-sky-light">
        			<div class="container">
                     <div class="col-sm-4 sm-margin-b-50 col-lg-12">
@@ -189,22 +218,22 @@
              <div class="fixed-ratio-resize" id="mem2name" >
              <table style="font-family:roboto;color:#34404e; font-weight:bold">
 			 <tbody class="fixed-ratio-resize">
-             <tr><td>2nd Member Name *</td><td style="text-indent:5em"><input type="text" name="Teammem2" value="" required/></td></tr>
+             <tr><td>2nd Member Name *</td><td style="text-indent:4.5em"><input type="text" name="Teammem2" value="" required/></td></tr>
              <tr><td>&nbsp;</td></tr>
-             <tr><td>EmailID * </td><td style="text-indent:5em"><input type="email" name="mem2email" value=""  autocomplete="off" required ></td></tr>
+             <tr><td>EmailID * </td><td style="text-indent:4.5em"><input type="email" name="mem2email" value=""  autocomplete="off" required ></td></tr>
              <tr><td>&nbsp;</td></tr>
-              <tr><td>Mobile Number *</td><td style="text-indent:5em"><input type="text" name="phone2" maxlength="10"  pattern="[0-9]{10}" value="" required></td></tr>
+              <tr><td>Mobile Number *</td><td style="text-indent:4.5em"><input type="text" name="phone2" maxlength="10"  pattern="[0-9]{10}" value="" required></td></tr>
              <tr><td>&nbsp;</td></tr>
              </tbody></table>
               </div>
              <div id="mem3name"  style="display:none" class="fixed-ratio-resize">
              <table style="font-family:roboto;color:#34404e; font-weight:bold">
 			 <tbody class="fixed-ratio-resize">
-             <tr><td>3rd Member Name * </td><td style="text-indent:5em"><input type="text" name="Teammem3" value=""/></td></tr>
+             <tr><td>3rd Member Name * </td><td style="text-indent:4.5em"><input type="text" name="Teammem3" value=""/></td></tr>
              <tr><td>&nbsp;</td></tr>
-             <tr><td>EmailID * </td><td style="text-indent:5em"><input type="email" name="mem3email" value=""  autocomplete="off"></td></tr>
+             <tr><td>EmailID * </td><td style="text-indent:4.5em"><input type="email" name="mem3email" value=""  autocomplete="off"></td></tr>
              <tr><td>&nbsp;</td></tr>
-             <tr><td>Mobile Number * </td><td style="text-indent:5em"><input type="text" name="phone3" maxlength="10"  pattern="[0-9]{10}" value=""></td></tr>
+             <tr><td>Mobile Number * </td><td style="text-indent:4.5em"><input type="text" name="phone3" maxlength="10"  pattern="[0-9]{10}" value=""></td></tr>
              <tr><td>&nbsp;</td></tr></tbody></table>
              </div>
              <table class="fixed-ratio-resize" style="font-family:roboto;color:#34404e; font-weight:bold">
@@ -300,23 +329,7 @@
               </div>
             </div>
      </div> 
-     <!-- Logos -->
-     <div class="container">
-     <div class="col-sm-4 sm-margin-b-50 col-lg-12 text-center">
-     <h3 class="text-center well"  style=" color:#ffffff">Sponsors</h3>
-     <img src="img/sponsors/csi.png" class="img-rounded isize"></img>&nbsp;&nbsp;
-     <img src="img/sponsors/acm.png" class="img-rounded isize"></img>&nbsp;&nbsp;
-     <img src="img/sponsors/ieee.png" class="img-rounded isize"></img>&nbsp;&nbsp;
-     <img src="img/sponsors/ictact.png" class="img-rounded isize"></img>&nbsp;&nbsp;
-     <img src="img/sponsors/spi.png" class="img-rounded isize"></img>&nbsp;&nbsp;
-     <img src="img/sponsors/tcs.png" class="img-rounded isize"></img>&nbsp;&nbsp;
-     <img src="img/sponsors/cts.png" class="img-rounded isize"></img>
-     </div>
-     </div>
-     <div class="col-lg-offset-1 col-lg-10 text-center">
-     &nbsp;
-     </div>
-     <!-- End of logos -->
+     
  	 <footer>
             <div class="footer">
             <div class="content container">
@@ -362,9 +375,7 @@
         <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
         <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U&amp;callback=initMap" async defer></script>
-        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-		
+       
         <!-- PAGE LEVEL SCRIPTS -->
         <script src="js/layout.min.js" type="text/javascript"></script>
         <script src="js/func.js" type="text/javascript"></script>
